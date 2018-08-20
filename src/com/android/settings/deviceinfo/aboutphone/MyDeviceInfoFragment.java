@@ -49,7 +49,11 @@ import com.android.settings.deviceinfo.SafetyInfoPreferenceController;
 import com.android.settings.deviceinfo.WifiMacAddressPreferenceController;
 import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController;
 import com.android.settings.deviceinfo.BuildDatePreferenceController;
+<<<<<<< HEAD
 import com.android.settings.deviceinfo.PixysVersionPreferenceController;
+=======
+import com.android.settings.deviceinfo.MoonVersionPreferenceController;
+>>>>>>> 3e7d363a8a... Add MoonExp version and build date to Settings
 import com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController;
 import com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -121,7 +125,11 @@ public class MyDeviceInfoFragment extends DashboardFragment
         controllers.add(new DeviceModelPreferenceController(context, fragment));
         controllers.add(new ImeiInfoPreferenceController(context, fragment));
         controllers.add(new FirmwareVersionPreferenceController(context, fragment));
+<<<<<<< HEAD
         controllers.add(new PixysVersionPreferenceController(context, lifecycle));
+=======
+        controllers.add(new MoonVersionPreferenceController(context, lifecycle));
+>>>>>>> 3e7d363a8a... Add MoonExp version and build date to Settings
         controllers.add(new BuildDatePreferenceController(context));
         controllers.add(new IpAddressPreferenceController(context, lifecycle));
         controllers.add(new WifiMacAddressPreferenceController(context, lifecycle));
