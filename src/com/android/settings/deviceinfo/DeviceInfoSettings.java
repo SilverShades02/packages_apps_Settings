@@ -32,7 +32,11 @@ import com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreference
 import com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController;
 import com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController;
 import com.android.settings.deviceinfo.BuildDatePreferenceController;
+<<<<<<< HEAD
 import com.android.settings.deviceinfo.PixysVersionPreferenceController;
+=======
+import com.android.settings.deviceinfo.MoonVersionPreferenceController;
+>>>>>>> 3e7d363a8a... Add MoonExp version and build date to Settings
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -128,7 +132,11 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new PhoneNumberPreferenceController(context));
         controllers.add(new SimStatusPreferenceController(context, fragment));
+<<<<<<< HEAD
         controllers.add(new PixysVersionPreferenceController(context, lifecycle));
+=======
+        controllers.add(new MoonVersionPreferenceController(context, lifecycle));
+>>>>>>> 3e7d363a8a... Add MoonExp version and build date to Settings
         controllers.add(new BuildDatePreferenceController(context));
         controllers.add(new DeviceModelPreferenceController(context, fragment));
         controllers.add(new ImeiInfoPreferenceController(context, fragment));

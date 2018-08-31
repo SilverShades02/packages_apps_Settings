@@ -25,20 +25,18 @@
         android:layout_height="match_parent"
         android:padding="@dimen/sim_content_padding">
 
-       <LinearLayout
-    	   android:gravity="center"
-	   android:layout_width="match_parent"
-	   android:layout_height="wrap_content"
-           android:selectable="false">
-
-           <ImageView
-	       android:layout_width="match_parent"
- 	       android:layout_height="match_parent"
-	       android:src="@drawable/ic_pixys_logo"
-	       android:adjustViewBounds="true"
-	       android:scaleType="centerInside" />
-
-        </LinearLayout>
+<LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:selectable="false">
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_moon_logo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+</LinearLayout>
 
         <TextView
             style="@style/device_info_dialog_label"
@@ -52,15 +50,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            style="@style/device_info_dialog_label"
-            android:id="@+id/pixys_version_label"
+         <TextView
+            style="@style/device_info_dialog_value"
+            android:id="@+id/moon_version_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pixys_version"/>
+            android:text="@string/moon_version"/>
+
         <TextView
             style="@style/device_info_dialog_value"
-            android:id="@+id/pixys_version_value"
+            android:id="@+id/moon_version_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

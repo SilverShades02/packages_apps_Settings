@@ -13,10 +13,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+<<<<<<< HEAD
     <!-- About phone screen, Pixys version -->
     <string name="pixys_version">PixysOS</string>
     <string name="pixys_version_default">Unknown</string>
     <string name="keywords_pixys_version">PixysOS version</string>
+=======
+    <!-- About phone screen, Moon version -->
+    <string name="moon_version">MoonExp version</string>
+    <string name="moon_version_default">Unknown</string>
+    <string name="keywords_moon_version">MoonExp version</string>
+>>>>>>> 3e7d363a8a... Add MoonExp version and build date to Settings
 
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
