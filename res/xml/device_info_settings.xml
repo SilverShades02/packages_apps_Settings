@@ -60,15 +60,7 @@
         settings:keywords="@string/keywords_android_version"
         android:summary="@string/summary_placeholder"/>
 
-<<<<<<< HEAD
-    <!-- PixysOS version --> 
-    <Preference 
-        android:key="pixys_version"
-        android:order="32"
-        android:title="@string/pixys_version"
-        settings:keywords="@string/keywords_pixys_version"
-        android:summary="@string/pixys_version_default"/>
-=======
+
     <!-- MoonExp version --> 
     <Preference 
         android:key="moon_version"
@@ -76,7 +68,6 @@
         android:title="@string/moon_version"
         settings:keywords="@string/keywords_moon_version"
         android:summary="@string/moon_version_default"/>
->>>>>>> 3e7d363a8a... Add MoonExp version and build date to Settings
 
     <!-- Build date -->
     <Preference 
