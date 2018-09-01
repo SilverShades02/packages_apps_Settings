@@ -15,9 +15,9 @@
 
 
     <!-- About phone screen, Moon version -->
-    <string name="moon_version">MoonExp version</string>
+    <string name="moon_version">MoonOS version</string>
     <string name="moon_version_default">Unknown</string>
-    <string name="keywords_moon_version">MoonExp version</string>
+    <string name="keywords_moon_version">MoonOS version</string>
 
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
