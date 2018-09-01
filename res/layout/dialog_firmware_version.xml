@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"/>
 
          <TextView
-            style="@style/device_info_dialog_value"
+            style="@style/device_info_dialog_label"
             android:id="@+id/moon_version_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
