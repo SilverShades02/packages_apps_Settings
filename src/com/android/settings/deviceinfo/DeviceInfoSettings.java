@@ -127,7 +127,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
             Activity activity, Fragment fragment, Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new PhoneNumberPreferenceController(context));
-        controllers.add(new SimStatusPreferenceController(context, fragment)); <<<<<<< HEAD 
+        controllers.add(new SimStatusPreferenceController(context, fragment));
         controllers.add(new MoonVersionPreferenceController(context, lifecycle));
         controllers.add(new BuildDatePreferenceController(context));
         controllers.add(new DeviceModelPreferenceController(context, fragment));

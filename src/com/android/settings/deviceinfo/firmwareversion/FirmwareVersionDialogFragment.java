@@ -85,11 +85,7 @@ public class FirmwareVersionDialogFragment extends InstrumentedDialogFragment {
 
     private void initializeControllers() {
         new FirmwareVersionDialogController(this).initialize();
-<<<<<<< HEAD
-        new PixysVersionDialogController(this).initialize();
-=======
         new MoonVersionDialogController(this).initialize();
->>>>>>> 3e7d363a8a... Add MoonExp version and build date to Settings
         new SecurityPatchLevelDialogController(this).initialize();
         new BasebandVersionDialogController(this).initialize();
         new KernelVersionDialogController(this).initialize();
