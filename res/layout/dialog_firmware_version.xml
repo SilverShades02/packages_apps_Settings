@@ -31,9 +31,9 @@
         android:layout_height="wrap_content"
         android:selectable="false">
 <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_moon_logo"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:src="@drawable/moon_about_logo"
         android:adjustViewBounds="true"
         android:scaleType="centerInside" />
 </LinearLayout>
