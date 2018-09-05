@@ -15,9 +15,9 @@
 
 
     <!-- About phone screen, Moon version -->
-    <string name="custom_version">Insane version</string>
+    <string name="custom_version">MinimalAOSP version</string>
     <string name="custom_version_default">Unknown</string>
-    <string name="keywords_custom_version">Insane version</string>
+    <string name="keywords_custom_version">MinimalAOSP version</string>
 
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
