@@ -107,11 +107,11 @@
 
     <!-- MoonExp version --> 
     <Preference 
-        android:key="moon_version"
+        android:key="custom_version"
         android:order="32"
-        android:title="@string/moon_version"
-        settings:keywords="@string/keywords_moon_version"
-        android:summary="@string/moon_version_default"/>
+        android:title="@string/custom_version"
+        settings:keywords="@string/keywords_custom_version"
+        android:summary="@string/custom_version_default"/>
 
      <!-- Build date -->
     <Preference 

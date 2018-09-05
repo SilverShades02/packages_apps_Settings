@@ -34,11 +34,11 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
-public class MoonVersionPreferenceController extends AbstractPreferenceController implements
+public class AospVersionPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin, LifecycleObserver, OnResume {
 
-    private static final String TAG = "MoonVersionPref";
-    private static final String KEY_MOON_VERSION = "moon_version";
+    private static final String TAG = "AospVersionPref";
+    private static final String KEY_CUSTOM_VERSION = "custom_version";
 
     private final UserManager mUserManager;
 
@@ -47,7 +47,7 @@ public class MoonVersionPreferenceController extends AbstractPreferenceControlle
 
     private long[] mHits = new long[3];
 
-    public MoonVersionPreferenceController(Context context, Lifecycle lifecycle) {
+    public AospVersionPreferenceController(Context context, Lifecycle lifecycle) {
         super(context);
         mUserManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
         if (lifecycle != null) {
@@ -65,13 +65,13 @@ public class MoonVersionPreferenceController extends AbstractPreferenceControlle
         super.displayPreference(screen);
         final Preference pref = screen.findPreference(getPreferenceKey());
         if (pref != null) {
-            pref.setSummary(Build.MOON_DISPLAY_VERSION);
+            pref.setSummary(Build.CUSTOM_DISPLAY_VERSION);
         }
     }
 
     @Override
     public String getPreferenceKey() {
-        return KEY_MOON_VERSION;
+        return KEY_CUSTOM_VERSION;
     }
 
     @Override
@@ -84,7 +84,7 @@ public class MoonVersionPreferenceController extends AbstractPreferenceControlle
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
-        if (!TextUtils.equals(preference.getKey(), KEY_MOON_VERSION)) {
+        if (!TextUtils.equals(preference.getKey(), KEY_CUSTOM_VERSION)) {
             return false;
         }
         System.arraycopy(mHits, 1, mHits, 0, mHits.length - 1);

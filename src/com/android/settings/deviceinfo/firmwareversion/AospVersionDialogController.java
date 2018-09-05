@@ -31,16 +31,16 @@ import android.view.View;
 import com.android.settings.R;
 import com.android.settingslib.RestrictedLockUtils;
 
-public class MoonVersionDialogController  implements View.OnClickListener {
+public class AospVersionDialogController  implements View.OnClickListener {
 
     private static final String TAG = "ExtfirmwareDialogCtrl";
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
     @VisibleForTesting
-    static final int MOON_VERSION_VALUE_ID = R.id.moon_version_value;
+    static final int CUSTOM_VERSION_VALUE_ID = R.id.custom_version_value;
     @VisibleForTesting
-    static final int MOON_VERSION_LABEL_ID = R.id.moon_version_label;
+    static final int CUSTOM_VERSION_LABEL_ID = R.id.custom_version_label;
 
     private final FirmwareVersionDialogFragment mDialog;
     private final Context mContext;
@@ -50,7 +50,7 @@ public class MoonVersionDialogController  implements View.OnClickListener {
     private RestrictedLockUtils.EnforcedAdmin mFunDisallowedAdmin;
     private boolean mFunDisallowedBySystem;
 
-    public MoonVersionDialogController(FirmwareVersionDialogFragment dialog) {
+    public AospVersionDialogController(FirmwareVersionDialogFragment dialog) {
         mDialog = dialog;
         mContext = dialog.getContext();
         mUserManager = (UserManager) mContext.getSystemService(Context.USER_SERVICE);
@@ -88,13 +88,13 @@ public class MoonVersionDialogController  implements View.OnClickListener {
         initializeAdminPermissions();
         registerClickListeners();
 
-        mDialog.setText(MOON_VERSION_VALUE_ID,
-                BidiFormatter.getInstance().unicodeWrap(Build.MOON_DISPLAY_VERSION));
+        mDialog.setText(CUSTOM_VERSION_VALUE_ID,
+                BidiFormatter.getInstance().unicodeWrap(Build.CUSTOM_DISPLAY_VERSION));
     }
 
     private void registerClickListeners() {
-        mDialog.registerClickListener(MOON_VERSION_LABEL_ID, this /* listener */);
-        mDialog.registerClickListener(MOON_VERSION_VALUE_ID, this /* listener */);
+        mDialog.registerClickListener(CUSTOM_VERSION_LABEL_ID, this /* listener */);
+        mDialog.registerClickListener(CUSTOM_VERSION_VALUE_ID, this /* listener */);
     }
 
     /**
