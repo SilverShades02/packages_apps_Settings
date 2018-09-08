@@ -22,6 +22,8 @@ import android.text.BidiFormatter;
 
 import com.android.settings.R;
 
+import android.os.SystemProperties;
+
 public class BuildNumberDialogController {
 
     @VisibleForTesting
@@ -33,11 +35,23 @@ public class BuildNumberDialogController {
         mDialog = dialog;
     }
 
+    private String getCustomVersion(){
+        String buildDate = SystemProperties.get("ro.aosp.build_date","");
+        return buildDate.equals("") ? "" : "MinimalAOSP-" + buildDate;
+    }
+
     /**
      * Updates the build number to the dialog.
      */
     public void initialize() {
-        mDialog.setText(BUILD_NUMBER_VALUE_ID,
-                BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+        String CustomVersion = getCustomVersion();
+        if (!CustomVersion.equals("")){
+            sb.append("\n");
+            sb.append(CustomVersion);
+        }
+        mDialog.setText(BUILD_NUMBER_VALUE_ID, sb.toString());
     }
 }
