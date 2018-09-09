@@ -29,7 +29,7 @@ import com.android.settings.core.PreferenceControllerMixin;
 public class BuildDatePreferenceController extends AbstractPreferenceController implements PreferenceControllerMixin {
 
     private static final String KEY_MOD_BUILD_DATE = "build_date";
-    private static final String PROPERTY_BUILD_DATE = "ro.build.date";
+    private static final String PROPERTY_BUILD_DATE = "org.aosp.build_date";
 
     public BuildDatePreferenceController(Context context) {
         super(context);

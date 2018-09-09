@@ -60,22 +60,14 @@
         settings:keywords="@string/keywords_android_version"
         android:summary="@string/summary_placeholder"/>
 
-
-    <!-- MoonExp version --> 
-    <Preference 
-        android:key="custom_version"
-        android:order="32"
-        android:title="@string/custom_version"
-        settings:keywords="@string/keywords_custom_version"
-        android:summary="@string/custom_version_default"/>
-
     <!-- Build date -->
-    <Preference 
+    <Preference
        android:key="build_date"
        android:order="33"
        android:title="@string/build_date"
        settings:keywords="@string/keywords_build_date"
        android:summary="@string/build_date_default" />
+
 
     <!--IP address -->
     <Preference

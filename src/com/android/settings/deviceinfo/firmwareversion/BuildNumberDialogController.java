@@ -36,8 +36,9 @@ public class BuildNumberDialogController {
     }
 
     private String getCustomVersion(){
-        String buildDate = SystemProperties.get("ro.aosp.build_date","");
-        return buildDate.equals("") ? "" : "MinimalAOSP-" + buildDate;
+        String buildDate = SystemProperties.get("org.aosp.build_date","");
+        String buildType = SystemProperties.get("org.aosp.build_type","unofficial").toUpperCase();
+        return buildDate.equals("") ? "" : "MinimalAOSP-" + buildDate + "-" + buildType;
     }
 
     /**

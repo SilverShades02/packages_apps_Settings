@@ -14,11 +14,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
 
-    <!-- About phone screen, Moon version -->
-    <string name="custom_version">MinimalAOSP version</string>
-    <string name="custom_version_default">Unknown</string>
-    <string name="keywords_custom_version">MinimalAOSP version</string>
-
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
