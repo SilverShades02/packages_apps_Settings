@@ -101,9 +101,9 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
     }
 
     private String getCustomVersion(){
-        String buildDate = SystemProperties.get("org.aosp.build_date","");
-        String buildType = SystemProperties.get("org.aosp.build_type","unofficial").toUpperCase();
-        return buildDate.equals("") ? "" : "MinimalAOSP-" + buildDate + "-" + buildType;
+        String buildDate = SystemProperties.get("org.chemical.build_date","");
+        String buildType = SystemProperties.get("org.chemical.build_type","unofficial").toUpperCase();
+        return buildDate.equals("") ? "" : "ChemicalOS-" + buildDate + "-" + buildType;
     }
 
     @Override
