@@ -37,8 +37,9 @@ public class BuildNumberDialogController {
 
     private String getCustomVersion(){
         String buildDate = SystemProperties.get("org.chemical.build_date","");
+        String chemicalDevice = SystemProperties.get("ro.chemical.device");
         String buildType = SystemProperties.get("org.chemical.build_type","unofficial").toUpperCase();
-        return buildDate.equals("") ? "" : "ChemicalOS-" + buildDate + "-" + buildType;
+        return buildDate.equals("") ? "" : "Chemical-" + buildDate + "-" + chemicalDevice + "-" + buildType;
     }
 
     /**
