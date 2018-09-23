@@ -32,7 +32,7 @@
 <ImageView
         android:layout_width="450px"
         android:layout_height="450px"
-        android:src="@drawable/about_chemical_logo"
+        android:src="@drawable/about_wave_logo"
         android:adjustViewBounds="true"
         android:scaleType="centerInside" />
 </LinearLayout>
