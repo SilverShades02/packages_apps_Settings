@@ -136,7 +136,7 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
-import com.nitrogen.settings.WaveSettings;
+import com.wave.settings.WaveSettings;
 
 public class SettingsGateway {
 
