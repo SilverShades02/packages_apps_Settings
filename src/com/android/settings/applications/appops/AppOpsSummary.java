@@ -108,7 +108,7 @@ public class AppOpsSummary extends InstrumentedPreferenceFragment {
         mContentContainer = container;
         mRootView = rootView;
 
-        mPageNames = getResources().getTextArray(R.array.app_ops_categories_pixys);
+        mPageNames = getResources().getTextArray(R.array.app_ops_categories_wave);
 
         mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
         MyPagerAdapter adapter = new MyPagerAdapter(getChildFragmentManager());
